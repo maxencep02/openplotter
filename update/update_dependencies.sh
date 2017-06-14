@@ -129,7 +129,7 @@ mkdir compiling
 cd compiling
 
 cd ~/.config/compiling
-git clone https://github.com/sailoog/RTIMULib2.git
+git clone https://github.com/Nick-Currawong/RTIMULib2.git
 cd RTIMULib2/Linux
 mkdir build
 cd build

@@ -1474,6 +1474,7 @@ along with this program.  If not, see http://www.gnu.org/licenses/"""
 		self.i2c_sensors_def.append(['STM L3GD20H + LSM303DLHC','rtimulib.imu.8.',[_('heading'),_('heel'),_('pitch')]])
 		self.i2c_sensors_def.append(['Bosch BMX055','rtimulib.imu.9.',[_('heading'),_('heel'),_('pitch')]])
 		self.i2c_sensors_def.append(['Bosch BNX055','rtimulib.imu.10.',[_('heading'),_('heel'),_('pitch')]])
+        self.i2c_sensors_def.append(['InvenSense MPU-9255','rtimulib.imu.11.',[_('heading'),_('heel'),_('pitch')]])
 		self.i2c_sensors_def.append(['BMP180','rtimulib.press.2.',[_('pressure'),_('temperature')]])
 		self.i2c_sensors_def.append(['LPS25H','rtimulib.press.3.',[_('pressure'),_('temperature')]])
 		self.i2c_sensors_def.append(['MS5611','rtimulib.press.4.',[_('pressure'),_('temperature')]])
