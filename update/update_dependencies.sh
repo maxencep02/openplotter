@@ -98,6 +98,36 @@ cd geomag/geomag
 python setup.py -q build
 sudo python setup.py -q install
 
+
+sudo rm /usr/lib/libRTIMULib.so
+sudo rm /usr/lib/libRTIMULib.so.7
+sudo rm /usr/lib/libRTIMULib.so.7.2.1
+sudo rm /usr/lib/python3/dist-packages/RTIMU.cpython-34m-arm-linux-gnueabihf.so
+sudo rm /usr/lib/python3/dist-packages/RTIMULib-7.2.1.egg-info
+sudo rm /usr/lib/python2.7/dist-packages/RTIMU.arm-linux-gnueabihf.so
+sudo rm /usr/lib/python2.7/dist-packages/RTIMULib-7.2.1.egg-info
+sudo rm /usr/lib/libRTIMULib.so
+sudo rm /usr/lib/libRTIMULib.so.7
+sudo rm /usr/lib/libRTIMULib.so.7.2.1
+sudo rm /usr/bin/RTIMULibCal
+sudo rm /usr/bin/RTIMULibDrive11
+sudo rm -r /usr/include/IMUDrivers
+sudo rm /usr/include/RTFusion.h
+sudo rm /usr/include/RTFusionKalman4.h
+sudo rm /usr/include/RTFusionRTQF.h
+sudo rm /usr/include/RTIMUAccelCal.h
+sudo rm /usr/include/RTIMUCalDefs.h
+sudo rm /usr/include/RTIMUHal.h
+sudo rm /usr/include/RTIMULib.h
+sudo rm /usr/include/RTIMULibDefs.h
+sudo rm /usr/include/RTIMUMagCal.h
+sudo rm /usr/include/RTIMUSettings.h
+sudo rm /usr/include/RTMath.h
+
+cd ~/.config
+mkdir compiling
+cd compiling
+
 cd ~/.config/compiling
 git clone https://github.com/sailoog/RTIMULib2.git
 cd RTIMULib2/Linux
@@ -133,6 +163,8 @@ cd ..
 cd python
 python setup.py -q build
 sudo python setup.py -q install
+python3 setup.py -q build
+sudo python3 setup.py -q install
 
 cd ~/.config
 sudo rm -rf ~/.config/compiling/
